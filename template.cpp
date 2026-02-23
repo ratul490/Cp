@@ -181,6 +181,29 @@ const int N=1e5+10; //for global 1d array
 //         }
 //     }
 // }
+
+// MST on connected graph/ saturated or densed graph
+// ll prims(vector<vector<pair<ll,ll>>>&g,vector<bool>&vis){
+// 	multiset<pair<ll,ll>>q;
+// 	q.insert({0LL,1LL});
+
+// 	ll sum=0;
+// 	while(!q.empty()){
+// 		auto it=q.begin();
+// 		auto [cost,node]=*it;
+// 		q.erase(it);
+// 		if(vis[node])continue;
+
+// 		vis[node]=true;
+// 		sum+=cost;
+// 		for(auto [wt,child]:g[node]){
+// 			if(vis[child])continue;
+// 			q.insert({wt,child});	
+// 		}
+// 	}
+// 	return sum;
+// }
+
 // vector<vector<int>>g;
 // vector<bool>visited;
 // void dfs(int vertex,vector<vector<int>>&g,vector<bool>&visited){
