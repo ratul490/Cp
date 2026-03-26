@@ -2,28 +2,14 @@
 using namespace std;
 
 #define ll long long
+#define fast ios::sync_with_stdio(false); cin.tie(nullptr);
+
+
 const int INF = 1e9;        // 1,000,000,000
 const long long INFLL = 4e18;
 const int N=1e5+10; //for global 1d array
 
 
-#define nl cout<<"\n";
-#define cy cout<<"YES\n";
-#define cn cout<<"NO\n";
-#define nr cout<<"\n"; return;
-#define ve(vv) for(auto &x:vv)
-#define mem(arr,value) memset(arr, value, sizeof(arr))
-#define ins insert
-#define pb push_back
-#define be(aa) (aa).begin(), (aa).end()
-#define ub(aa, tt) upper_bound(aa.begin(), aa.end(), tt) - aa.begin()
-#define lb(aa, tt) lower_bound(aa.begin(), aa.end(), tt) - aa.begin()
-//sort pair for second index
-#define ssort(aa) sort(be(aa), [](pair<ll, ll> a, pair<ll, ll> b) { return a.second < b.second; })
-#define psort(aa) sort(be(aa), [](pair<long long, long long> a, pair<long long, long long> b) {if (a.first == b.first){return b.second > a.second;}return b.first < a.first; });
-#define loop(n) for(int i=0;i<n;++i)
-#define loop1(n) for(int i=1;i<=n;++i)
-#define fast ios::sync_with_stdio(false); cin.tie(nullptr);
 
 // __int128 binexp(__int128 base, long long exp) {
 //     __int128 result = 1;
