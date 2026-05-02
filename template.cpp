@@ -1,15 +1,18 @@
 #include<bits/stdc++.h>
+#include<ext/pb_ds/assoc_container.hpp>
+#include<ext/pb_ds/tree_policy.hpp>
+
 using namespace std;
+using namespace __gnu_pbds;
+
+typedef tree<int, null_type , less<int> , rb_tree_tag , tree_order_statistics_node_update > pbds ;
+//*s.find_by_order(key) -> finds the key(th) element (0 based indexing) 
+//s.order_of_key(key)   -> finds the number of elements that are smaller than key
 
 #define ll long long
-#define fast ios::sync_with_stdio(false); cin.tie(nullptr);
-
-
 const int INF = 1e9;        // 1,000,000,000
 const long long INFLL = 4e18;
 const int N=1e5+10; //for global 1d array
-
-
 
 // __int128 binexp(__int128 base, long long exp) {
 //     __int128 result = 1;
@@ -249,7 +252,7 @@ void solve(){
 
 }
 int main(){ 
-    fast    
+    ios::sync_with_stdio(false); cin.tie(nullptr);   
     ll tt=1;
     // cin>>tt;
     for(int i=1;i<=tt;++i){
