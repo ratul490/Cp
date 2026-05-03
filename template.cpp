@@ -14,6 +14,8 @@ const int INF = 1e9;        // 1,000,000,000
 const long long INFLL = 4e18;
 const int N=1e5+10; //for global 1d array
 
+
+
 // __int128 binexp(__int128 base, long long exp) {
 //     __int128 result = 1;
 //     while (exp > 0) {
@@ -249,10 +251,14 @@ const int N=1e5+10; //for global 1d array
 
 void solve(){
 
-
 }
 int main(){ 
-    ios::sync_with_stdio(false); cin.tie(nullptr);   
+    ios::sync_with_stdio(false); cin.tie(nullptr);
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    #endif
+
     ll tt=1;
     // cin>>tt;
     for(int i=1;i<=tt;++i){
