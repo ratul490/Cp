@@ -230,6 +230,24 @@ const int N=1e5+10; //for global 1d array
 //     }
 // }
 
+// multiple source to multiple destination shortest path
+// the number of nodes must be small because it's O(n^3)
+// void floyd_warshal(int n , vector<vector<ll>>&dist){
+//     for(int i = 1 ; i <= n ; ++i )
+//         dist[i][i] = 0;
+
+//     for(int i = 1 ; i <= n ; ++i){
+//         for(int j = 1 ; j <= n ; ++j){
+//             for(int k = 1 ; k <= n ; ++k){
+//                 if(dist[j][i] + dist[i][k] < dist[j][k]){
+//                     dist[j][k] = dist[j][i] + dist[i][k] ;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
 // vector<vector<pair<ll,ll>>>g;
 // void dijkstra(int source){
 //     set<pair<ll,ll>>s;
