@@ -235,7 +235,7 @@ const int N=1e5+10; //for global 1d array
 // void floyd_warshal(int n , vector<vector<ll>>&dist){
 //     for(int i = 1 ; i <= n ; ++i )
 //         dist[i][i] = 0;
-
+//   // the outer loop is the intermediate medium
 //     for(int i = 1 ; i <= n ; ++i){
 //         for(int j = 1 ; j <= n ; ++j){
 //             for(int k = 1 ; k <= n ; ++k){
