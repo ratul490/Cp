@@ -14,6 +14,11 @@ const int INF = 1e9;        // 1,000,000,000
 const long long INFLL = 4e18;
 const int N=1e5+10; //for global 1d array
 
+mt19937_64 rng(chrono::steady_clock::now().time_since_epoch().count());
+inline ll my_rand(ll l, ll r) {
+    return uniform_int_distribution<ll>(l, r)(rng);
+}
+
 __int128 binexp(__int128 base, long long exp){
     __int128 result = 1;
     while (exp > 0){
