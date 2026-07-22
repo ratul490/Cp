@@ -8,6 +8,7 @@ using namespace __gnu_pbds;
 typedef tree<int, null_type , less<int> , rb_tree_tag , tree_order_statistics_node_update > pbds ;
 //*s.find_by_order(key) -> finds the key(th) element (0 based indexing) 
 //s.order_of_key(key)   -> finds the number of elements that are smaller than key
+//declare rule -- pbds v ;
 
 #define ll long long
 const int INF = 1e9;        // 1,000,000,000
